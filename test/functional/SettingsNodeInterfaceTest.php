@@ -58,23 +58,33 @@ class SettingsNodeInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'Dhii\\Data\\Tree\\KeyAwareNodeInterface', $subject,
-            'Subject is not a valid instance'
+            'Dhii\Util\String\LabelAwareInterface', $subject,
+            'Subject does not extend expected parent.'
         );
 
         $this->assertInstanceOf(
-            'Dhii\\Data\\Tree\\ChildrenAwareNodeInterface', $subject,
-            'Subject is not a valid instance'
+            'Dhii\Util\String\DescriptionAwareInterface', $subject,
+            'Subject does not extend expected parent.'
         );
 
         $this->assertInstanceOf(
-            'Dhii\\Validation\\ValidatorInterface', $subject,
-            'Subject is not a valid instance'
+            'Dhii\Data\Tree\KeyAwareNodeInterface', $subject,
+            'Subject does not extend expected parent.'
         );
 
         $this->assertInstanceOf(
-            'Dhii\\Output\\RendererInterface', $subject,
-            'Subject is not a valid instance'
+            'Dhii\Data\Tree\ChildrenAwareNodeInterface', $subject,
+            'Subject does not extend expected parent.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Validation\ValidatorInterface', $subject,
+            'Subject does not extend expected parent.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Output\RendererInterface', $subject,
+            'Subject does not extend expected parent.'
         );
     }
 }

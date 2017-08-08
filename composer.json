@@ -16,6 +16,7 @@
         "dhii/data-key-value-aware-interface": "^0.1",
         "dhii/validation-interface": "^0.1",
         "dhii/output-renderer-interface": "dev-master",
+        "dhii/human-readable-interface": "dev-task/initial-interfaces",
         "dhii/data-tree-interface": "dev-develop"
     },
     "require-dev": {
@@ -37,6 +38,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/Dhii/output-renderer-interface"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Dhii/human-readable-interface"
         }
     ]
 }

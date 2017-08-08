@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e26f794dc075cc6a3f580f5b70cdd38",
+    "content-hash": "7e9dbbc21a7be73278711eafc8205686",
     "packages": [
         {
             "name": "dhii/data-hierarchy-interface",
@@ -134,6 +134,63 @@
             ],
             "description": "Interfaces for objects that can make up a tree",
             "time": "2017-07-26 10:06:50"
+        },
+        {
+            "name": "dhii/human-readable-interface",
+            "version": "dev-task/initial-interfaces",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/human-readable-interface.git",
+                "reference": "a076742a26db51eda82139e8f4e92385629d9f53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/human-readable-interface/zipball/a076742a26db51eda82139e8f4e92385629d9f53",
+                "reference": "a076742a26db51eda82139e8f4e92385629d9f53",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "dhii/stringable-interface": "^0.1.0",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "suggest": {
+                "dhii/i18n-interface": "For internationalizing and translating human readable strings."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Util\\String\\": "src"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ],
+                "csfix": [
+                    "php-cs-fixer fix -vvv"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for human readable string interoperation.",
+            "support": {
+                "source": "https://github.com/Dhii/human-readable-interface/tree/task/initial-interfaces",
+                "issues": "https://github.com/Dhii/human-readable-interface/issues"
+            },
+            "time": "2017-08-07 12:53:14"
         },
         {
             "name": "dhii/output-renderer-interface",
@@ -359,7 +416,7 @@
                 }
             ],
             "description": "A default PHP CS Fixer config implementation",
-            "time": "2016-09-03T14:45:03+00:00"
+            "time": "2016-09-03 14:45:03"
         },
         {
             "name": "doctrine/instantiator",
@@ -622,16 +679,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "183824db76118b9dddffc7e522b91fa175f75119"
+                "reference": "4aada1f93c72c35e22fb1383b47fee43b8f1d157"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/183824db76118b9dddffc7e522b91fa175f75119",
-                "reference": "183824db76118b9dddffc7e522b91fa175f75119",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/4aada1f93c72c35e22fb1383b47fee43b8f1d157",
+                "reference": "4aada1f93c72c35e22fb1383b47fee43b8f1d157",
                 "shasum": ""
             },
             "require": {
@@ -663,7 +720,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2017-08-04T20:55:59+00:00"
+            "time": "2017-08-08T06:39:58+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -2276,6 +2333,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "dhii/output-renderer-interface": 20,
+        "dhii/human-readable-interface": 20,
         "dhii/data-tree-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
