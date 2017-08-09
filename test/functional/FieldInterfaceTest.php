@@ -63,10 +63,5 @@ class FieldInterfaceTest extends TestCase
             'Dhii\Util\String\DescriptionAwareInterface', $subject,
             'Subject is not a valid instance'
         );
-
-        $this->assertInstanceOf(
-            'Dhii\Validation\ValidatorInterface', $subject,
-            'Subject is not a valid instance'
-        );
     }
 }

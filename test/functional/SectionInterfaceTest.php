@@ -32,6 +32,7 @@ class SectionInterfaceTest extends TestCase
             ->getKey()
             ->getLabel()
             ->getFields()
+            ->validate()
             ->render()
             ->new();
 

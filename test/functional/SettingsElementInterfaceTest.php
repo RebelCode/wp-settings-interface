@@ -31,6 +31,7 @@ class SettingsElementInterfaceTest extends TestCase
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getKey()
             ->getLabel()
+            ->validate()
             ->render()
             ->new();
 
@@ -58,6 +59,11 @@ class SettingsElementInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             'Dhii\Util\String\LabelAwareInterface', $subject,
+            'Subject does not extend expected parent.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Validation\ValidatorInterface', $subject,
             'Subject does not extend expected parent.'
         );
 

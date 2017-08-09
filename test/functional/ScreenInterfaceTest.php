@@ -33,6 +33,7 @@ class ScreenInterfaceTest extends TestCase
             ->getLabel()
             ->getSections()
             ->render()
+            ->validate()
             ->new();
 
         return $mock;
