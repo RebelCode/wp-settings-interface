@@ -1,42 +1,36 @@
 <?php
 
-
 namespace RebelCode\WordPress\Admin\Settings\FuncTest;
 
+use RebelCode\WordPress\Admin\Settings\SettingsElementInterface;
 use Xpmock\TestCase;
-use RebelCode\WordPress\Admin\Settings\SettingsNodeInterface;
 
 /**
  * Tests {@see RebelCode\WordPress\Admin\Settings\SettingsNodeInterface}.
  *
  * @since [*next-version*]
  */
-class SettingsNodeInterfaceTest extends TestCase
+class SettingsElementInterfaceTest extends TestCase
 {
     /**
-     * The classname of the test subject.
+     * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\SettingsNodeInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\SettingsElementInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return SettingsNodeInterface
+     * @return SettingsElementInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getKey()
-            ->getValue()
             ->getLabel()
-            ->getDescription()
-            ->getChildren()
-            ->hasChildren()
-            ->validate()
             ->render()
             ->new();
 
@@ -58,27 +52,12 @@ class SettingsNodeInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
+            'Dhii\Data\KeyAwareInterface', $subject,
+            'Subject does not extend expected parent.'
+        );
+
+        $this->assertInstanceOf(
             'Dhii\Util\String\LabelAwareInterface', $subject,
-            'Subject does not extend expected parent.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\Util\String\DescriptionAwareInterface', $subject,
-            'Subject does not extend expected parent.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\Data\Tree\KeyAwareNodeInterface', $subject,
-            'Subject does not extend expected parent.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\Data\Tree\ChildrenAwareNodeInterface', $subject,
-            'Subject does not extend expected parent.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\Validation\ValidatorInterface', $subject,
             'Subject does not extend expected parent.'
         );
 
