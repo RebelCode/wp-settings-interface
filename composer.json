@@ -15,7 +15,7 @@
         "php": "^5.3 | ^7.0",
         "dhii/data-key-value-aware-interface": "^0.1",
         "dhii/validation-interface": "^0.1",
-        "dhii/output-renderer-interface": "dev-master",
+        "dhii/output-renderer-interface": "dev-task/bring-up-to-dhii-standards",
         "dhii/human-readable-interface": "dev-task/initial-interfaces",
         "dhii/data-hierarchy-interface": "dev-develop"
     },

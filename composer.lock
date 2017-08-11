@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "378d1ea1b60d62783b3cf5c35dd94975",
+    "content-hash": "19662a72b0451c88545383c398556b6d",
     "packages": [
         {
             "name": "dhii/data-hierarchy-interface",
@@ -96,12 +96,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/human-readable-interface.git",
-                "reference": "a076742a26db51eda82139e8f4e92385629d9f53"
+                "reference": "35e5a00fa170edd4fb5d0e44e4757da825e1da2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/human-readable-interface/zipball/a076742a26db51eda82139e8f4e92385629d9f53",
-                "reference": "a076742a26db51eda82139e8f4e92385629d9f53",
+                "url": "https://api.github.com/repos/Dhii/human-readable-interface/zipball/35e5a00fa170edd4fb5d0e44e4757da825e1da2d",
+                "reference": "35e5a00fa170edd4fb5d0e44e4757da825e1da2d",
                 "shasum": ""
             },
             "require": {
@@ -145,21 +145,24 @@
                 "source": "https://github.com/Dhii/human-readable-interface/tree/task/initial-interfaces",
                 "issues": "https://github.com/Dhii/human-readable-interface/issues"
             },
-            "time": "2017-08-07 12:53:14"
+            "time": "2017-08-11 09:19:38"
         },
         {
             "name": "dhii/output-renderer-interface",
-            "version": "dev-master",
+            "version": "dev-task/bring-up-to-dhii-standards",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-interface.git",
-                "reference": "a665ce0e0b2d81f8dad2b21671137c1de5e4b706"
+                "reference": "f701e31569cee4a6db11f8de80ac00447bf6f7ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/a665ce0e0b2d81f8dad2b21671137c1de5e4b706",
-                "reference": "a665ce0e0b2d81f8dad2b21671137c1de5e4b706",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/f701e31569cee4a6db11f8de80ac00447bf6f7ff",
+                "reference": "f701e31569cee4a6db11f8de80ac00447bf6f7ff",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -185,10 +188,10 @@
             ],
             "description": "An interface for objects that can perform rendering.",
             "support": {
-                "source": "https://github.com/Dhii/output-renderer-interface/tree/master",
+                "source": "https://github.com/Dhii/output-renderer-interface/tree/task/bring-up-to-dhii-standards",
                 "issues": "https://github.com/Dhii/output-renderer-interface/issues"
             },
-            "time": "2016-11-26 20:59:08"
+            "time": "2017-08-11 09:55:01"
         },
         {
             "name": "dhii/validation-interface",
