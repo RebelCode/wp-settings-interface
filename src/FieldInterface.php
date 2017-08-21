@@ -2,8 +2,8 @@
 
 namespace RebelCode\WordPress\Admin\Settings;
 
+use Dhii\Type\TypeAwareInterface;
 use Dhii\Util\String\DescriptionAwareInterface;
-use Dhii\Validation\ValidatorInterface;
 
 /**
  * Something that represents a settings field that can be rendered.
@@ -16,6 +16,7 @@ use Dhii\Validation\ValidatorInterface;
  */
 interface FieldInterface extends
     SettingsElementInterface,
-    DescriptionAwareInterface
+    DescriptionAwareInterface,
+    TypeAwareInterface
 {
 }
