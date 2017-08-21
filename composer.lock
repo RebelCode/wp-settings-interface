@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "19662a72b0451c88545383c398556b6d",
+    "content-hash": "302a0f5c486144877b794039014cf581",
     "packages": [
         {
             "name": "dhii/data-hierarchy-interface",
@@ -153,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-interface.git",
-                "reference": "f701e31569cee4a6db11f8de80ac00447bf6f7ff"
+                "reference": "99078aa7cb9b5891d222ddad582349a69a0432ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/f701e31569cee4a6db11f8de80ac00447bf6f7ff",
-                "reference": "f701e31569cee4a6db11f8de80ac00447bf6f7ff",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/99078aa7cb9b5891d222ddad582349a69a0432ca",
+                "reference": "99078aa7cb9b5891d222ddad582349a69a0432ca",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,51 @@
                 "source": "https://github.com/Dhii/output-renderer-interface/tree/task/bring-up-to-dhii-standards",
                 "issues": "https://github.com/Dhii/output-renderer-interface/issues"
             },
-            "time": "2017-08-11 09:55:01"
+            "time": "2017-08-19 16:42:04"
+        },
+        {
+            "name": "dhii/type-interface",
+            "version": "dev-task/initial-interfaces",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/type-interface.git",
+                "reference": "f4df28a6783295c30ef740e8f1135d0babb62f64"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/type-interface/zipball/f4df28a6783295c30ef740e8f1135d0babb62f64",
+                "reference": "f4df28a6783295c30ef740e8f1135d0babb62f64",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/data-key-value-aware-interface": "^0.1",
+                "dhii/validation-interface": "^0.1",
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "^0.1",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Type\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for type interoperability",
+            "time": "2017-08-21 09:21:08"
         },
         {
             "name": "dhii/validation-interface",
@@ -1984,16 +2028,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
                 "shasum": ""
             },
             "require": {
@@ -2005,7 +2049,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -2039,7 +2083,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09T14:24:12+00:00"
+            "time": "2017-06-14T15:44:48+00:00"
         },
         {
             "name": "symfony/process",
@@ -2251,6 +2295,7 @@
         "dhii/output-renderer-interface": 20,
         "dhii/human-readable-interface": 20,
         "dhii/data-hierarchy-interface": 20,
+        "dhii/type-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": true,

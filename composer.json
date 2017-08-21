@@ -17,7 +17,8 @@
         "dhii/validation-interface": "^0.1",
         "dhii/output-renderer-interface": "dev-task/bring-up-to-dhii-standards",
         "dhii/human-readable-interface": "dev-task/initial-interfaces",
-        "dhii/data-hierarchy-interface": "dev-develop"
+        "dhii/data-hierarchy-interface": "dev-develop",
+        "dhii/type-interface": "dev-task/initial-interfaces"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
