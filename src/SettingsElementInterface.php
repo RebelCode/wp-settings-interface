@@ -5,7 +5,6 @@ namespace RebelCode\WordPress\Admin\Settings;
 use Dhii\Data\KeyAwareInterface;
 use Dhii\Output\RendererInterface;
 use Dhii\Util\String\LabelAwareInterface;
-use Dhii\Validation\ValidatorInterface;
 
 /**
  * Something that represents a settings element.
@@ -22,7 +21,6 @@ use Dhii\Validation\ValidatorInterface;
 interface SettingsElementInterface extends
     KeyAwareInterface,
     LabelAwareInterface,
-    RendererInterface,
-    ValidatorInterface
+    RendererInterface
 {
 }

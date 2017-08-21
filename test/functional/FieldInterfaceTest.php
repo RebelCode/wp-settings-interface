@@ -33,7 +33,6 @@ class FieldInterfaceTest extends TestCase
             ->getKey()
             ->getLabel()
             ->getDescription()
-            ->validate()
             ->render()
             ->new();
 
