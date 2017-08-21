@@ -18,7 +18,7 @@ use Dhii\Util\String\LabelAwareInterface;
  *
  * @since [*next-version*]
  */
-interface SettingsElementInterface extends
+interface ElementInterface extends
     KeyAwareInterface,
     LabelAwareInterface,
     RendererInterface

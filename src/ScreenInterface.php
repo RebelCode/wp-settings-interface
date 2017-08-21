@@ -16,7 +16,7 @@ use Traversable;
  *
  * @since [*next-version*]
  */
-interface ScreenInterface extends SettingsElementInterface
+interface ScreenInterface extends ElementInterface
 {
     /**
      * Retrieves the settings sections.

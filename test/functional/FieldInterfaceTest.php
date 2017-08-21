@@ -54,7 +54,7 @@ class FieldInterfaceTest extends TestCase
         );
 
         $this->assertInstanceOf(
-            'RebelCode\WordPress\Admin\Settings\SettingsElementInterface', $subject,
+            'RebelCode\WordPress\Admin\Settings\ElementInterface', $subject,
             'Subject is not a valid instance'
         );
 

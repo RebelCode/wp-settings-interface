@@ -12,7 +12,7 @@ use Traversable;
  *
  * @since [*next-version*]
  */
-interface SectionInterface extends SettingsElementInterface
+interface SectionInterface extends ElementInterface
 {
     /**
      * Retrieves the settings fields in this section.

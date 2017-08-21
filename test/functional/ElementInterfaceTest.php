@@ -2,29 +2,29 @@
 
 namespace RebelCode\WordPress\Admin\Settings\FuncTest;
 
-use RebelCode\WordPress\Admin\Settings\SettingsElementInterface;
+use RebelCode\WordPress\Admin\Settings\ElementInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see RebelCode\WordPress\Admin\Settings\SettingsNodeInterface}.
+ * Tests {@see RebelCode\WordPress\Admin\Settings\ElementInterface}.
  *
  * @since [*next-version*]
  */
-class SettingsElementInterfaceTest extends TestCase
+class ElementInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\SettingsElementInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\ElementInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return SettingsElementInterface
+     * @return ElementInterface
      */
     public function createInstance()
     {

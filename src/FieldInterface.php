@@ -15,7 +15,7 @@ use Dhii\Util\String\DescriptionAwareInterface;
  * @since [*next-version*]
  */
 interface FieldInterface extends
-    SettingsElementInterface,
+    ElementInterface,
     DescriptionAwareInterface,
     TypeAwareInterface
 {
