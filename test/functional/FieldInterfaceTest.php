@@ -34,6 +34,7 @@ class FieldInterfaceTest extends TestCase
             ->getLabel()
             ->getDescription()
             ->render()
+            ->getType()
             ->new();
 
         return $mock;
