@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "302a0f5c486144877b794039014cf581",
+    "content-hash": "52d5cd71ef77618a25f159156f3ce60b",
     "packages": [
+        {
+            "name": "dhii/block-interface",
+            "version": "dev-task/initial-interface",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/output-block-interface.git",
+                "reference": "7d540e6bb694e3952d2e4602496ca9983d80845b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/output-block-interface/zipball/7d540e6bb694e3952d2e4602496ca9983d80845b",
+                "reference": "7d540e6bb694e3952d2e4602496ca9983d80845b",
+                "shasum": ""
+            },
+            "require": {
+                "dhii/output-renderer-interface": "dev-release/0.1",
+                "dhii/stringable-interface": "^0.1",
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Output\\": "src"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ],
+                "csfix": [
+                    "php-cs-fixer fix -vvv"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interfaces for output blocks.",
+            "support": {
+                "source": "https://github.com/Dhii/output-block-interface/tree/task/initial-interface",
+                "issues": "https://github.com/Dhii/output-block-interface/issues"
+            },
+            "time": "2017-08-22 11:07:48"
+        },
         {
             "name": "dhii/data-hierarchy-interface",
             "version": "dev-develop",
@@ -149,16 +204,16 @@
         },
         {
             "name": "dhii/output-renderer-interface",
-            "version": "dev-task/bring-up-to-dhii-standards",
+            "version": "dev-release/0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/output-renderer-interface.git",
-                "reference": "99078aa7cb9b5891d222ddad582349a69a0432ca"
+                "reference": "0d7fee532b4a320ce95af2d9ba95b19a726f8df2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/99078aa7cb9b5891d222ddad582349a69a0432ca",
-                "reference": "99078aa7cb9b5891d222ddad582349a69a0432ca",
+                "url": "https://api.github.com/repos/Dhii/output-renderer-interface/zipball/0d7fee532b4a320ce95af2d9ba95b19a726f8df2",
+                "reference": "0d7fee532b4a320ce95af2d9ba95b19a726f8df2",
                 "shasum": ""
             },
             "require": {
@@ -188,10 +243,52 @@
             ],
             "description": "An interface for objects that can perform rendering.",
             "support": {
-                "source": "https://github.com/Dhii/output-renderer-interface/tree/task/bring-up-to-dhii-standards",
+                "source": "https://github.com/Dhii/output-renderer-interface/tree/develop",
                 "issues": "https://github.com/Dhii/output-renderer-interface/issues"
             },
-            "time": "2017-08-19 16:42:04"
+            "time": "2017-08-21 11:54:20"
+        },
+        {
+            "name": "dhii/stringable-interface",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dhii/stringable-interface.git",
+                "reference": "b6653905eef2ebf377749feb80a6d18abbe913ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dhii/stringable-interface/zipball/b6653905eef2ebf377749feb80a6d18abbe913ef",
+                "reference": "b6653905eef2ebf377749feb80a6d18abbe913ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 | ^7.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "<=0.3.2",
+                "dhii/php-cs-fixer-config": "dev-php-5.3",
+                "phpunit/phpunit": "^4.8",
+                "ptrofimov/xpmock": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dhii\\Util\\String\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dhii Team",
+                    "email": "development@dhii.co"
+                }
+            ],
+            "description": "Interoperability interface for objects that can be cast to string",
+            "time": "2017-01-23T15:08:20+00:00"
         },
         {
             "name": "dhii/type-interface",
@@ -2292,10 +2389,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "dhii/output-renderer-interface": 20,
         "dhii/human-readable-interface": 20,
         "dhii/data-hierarchy-interface": 20,
         "dhii/type-interface": 20,
+        "dhii/block-interface": 20,
         "dhii/php-cs-fixer-config": 20
     },
     "prefer-stable": true,

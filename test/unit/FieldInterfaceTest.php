@@ -1,37 +1,40 @@
 <?php
 
-namespace RebelCode\WordPress\Admin\Settings\FuncTest;
+namespace RebelCode\WordPress\Admin\Settings\UnitTest;
 
-use RebelCode\WordPress\Admin\Settings\ElementInterface;
+use RebelCode\WordPress\Admin\Settings\FieldInterface;
 use Xpmock\TestCase;
 
 /**
- * Tests {@see RebelCode\WordPress\Admin\Settings\ElementInterface}.
+ * Tests {@see \RebelCode\WordPress\Admin\Settings\FieldInterface}.
  *
  * @since [*next-version*]
  */
-class ElementInterfaceTest extends TestCase
+class FieldInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\ElementInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\FieldInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ElementInterface
+     * @return FieldInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getKey()
+            ->getValue()
             ->getLabel()
-            ->render()
+            ->getDescription()
+            ->getFieldType()
+            ->getValueType()
             ->new();
 
         return $mock;
@@ -48,22 +51,27 @@ class ElementInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME, $subject,
-            'Subject is not a valid instance'
+            'A valid instance of the test subject could not be created.'
         );
 
         $this->assertInstanceOf(
             'Dhii\Data\KeyAwareInterface', $subject,
-            'Subject does not extend expected parent.'
+            'Test subject does not extend expected interface.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Data\ValueAwareInterface', $subject,
+            'Test subject does not extend expected interface.'
         );
 
         $this->assertInstanceOf(
             'Dhii\Util\String\LabelAwareInterface', $subject,
-            'Subject does not extend expected parent.'
+            'Test subject does not extend expected interface.'
         );
 
         $this->assertInstanceOf(
-            'Dhii\Output\RendererInterface', $subject,
-            'Subject does not extend expected parent.'
+            'Dhii\Util\String\DescriptionAwareInterface', $subject,
+            'Test subject does not extend expected interface.'
         );
     }
 }

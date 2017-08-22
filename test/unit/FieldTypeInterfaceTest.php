@@ -1,38 +1,37 @@
 <?php
 
-namespace RebelCode\WordPress\Admin\Settings\FuncTest;
+namespace RebelCode\WordPress\Admin\Settings\UnitTest;
 
+use RebelCode\WordPress\Admin\Settings\FieldTypeInterface;
 use Xpmock\TestCase;
-use RebelCode\WordPress\Admin\Settings\ScreenInterface;
 
 /**
- * Tests {@see RebelCode\WordPress\Admin\Settings\ScreenInterface}.
+ * Tests {@see \RebelCode\WordPress\Admin\Settings\FieldTypeInterface}.
  *
  * @since [*next-version*]
  */
-class ScreenInterfaceTest extends TestCase
+class FieldTypeInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\ScreenInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\FieldTypeInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return ScreenInterface
+     * @return FieldTypeInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getKey()
-            ->getLabel()
-            ->getSections()
-            ->render()
+            ->getBlock()
+            ->validate()
             ->new();
 
         return $mock;
@@ -49,12 +48,17 @@ class ScreenInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             static::TEST_SUBJECT_CLASSNAME, $subject,
-            'Subject is not a valid instance'
+            'A valid instance of the test subject could not be created.'
         );
 
         $this->assertInstanceOf(
-            'RebelCode\WordPress\Admin\Settings\ElementInterface', $subject,
-            'Subject is not a valid instance'
+            'Dhii\Type\KeyAwareTypeInterface', $subject,
+            'Test subject does not extend expected interface.'
+        );
+
+        $this->assertInstanceOf(
+            'Dhii\Output\BlockAwareInterface', $subject,
+            'Test subject does not extend expected interface.'
         );
     }
 }
