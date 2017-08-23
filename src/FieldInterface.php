@@ -4,6 +4,7 @@ namespace RebelCode\WordPress\Admin\Settings;
 
 use Dhii\Data\KeyAwareInterface;
 use Dhii\Data\ValueAwareInterface;
+use Dhii\Output\BlockInterface;
 use Dhii\Type\TypeInterface;
 use Dhii\Util\String\DescriptionAwareInterface;
 use Dhii\Util\String\LabelAwareInterface;
@@ -12,7 +13,7 @@ use Dhii\Util\String\LabelAwareInterface;
  * Something that represents a settings field.
  *
  * A settings field represents a UI component that displays and/or allows modification of some value, together
- * with additional display data (such as label and description). The related value
+ * with additional display data (such as label and description).
  *
  * @since [*next-version*]
  */
