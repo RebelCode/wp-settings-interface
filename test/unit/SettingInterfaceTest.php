@@ -2,39 +2,38 @@
 
 namespace RebelCode\WordPress\Admin\Settings\UnitTest;
 
-use RebelCode\WordPress\Admin\Settings\FieldInterface;
 use Xpmock\TestCase;
+use RebelCode\WordPress\Admin\Settings\SettingInterface;
 
 /**
- * Tests {@see \RebelCode\WordPress\Admin\Settings\FieldInterface}.
+ * Tests {@see \RebelCode\WordPress\Admin\Settings\SettingInterface}.
  *
  * @since [*next-version*]
  */
-class FieldInterfaceTest extends TestCase
+class SettingInterfaceTest extends TestCase
 {
     /**
      * The class name of the test subject.
      *
      * @since [*next-version*]
      */
-    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\FieldInterface';
+    const TEST_SUBJECT_CLASSNAME = 'RebelCode\WordPress\Admin\Settings\SettingInterface';
 
     /**
      * Creates a new instance of the test subject.
      *
      * @since [*next-version*]
      *
-     * @return FieldInterface
+     * @return SettingInterface
      */
     public function createInstance()
     {
         $mock = $this->mock(static::TEST_SUBJECT_CLASSNAME)
             ->getKey()
-            ->getValue()
             ->getLabel()
             ->getDescription()
-            ->getFieldType()
             ->getValueType()
+            ->getSettingType()
             ->new();
 
         return $mock;
@@ -56,22 +55,17 @@ class FieldInterfaceTest extends TestCase
 
         $this->assertInstanceOf(
             'Dhii\Data\KeyAwareInterface', $subject,
-            'Test subject does not extend expected interface.'
-        );
-
-        $this->assertInstanceOf(
-            'Dhii\Data\ValueAwareInterface', $subject,
-            'Test subject does not extend expected interface.'
+            'Test subject does not extend expected parent interface.'
         );
 
         $this->assertInstanceOf(
             'Dhii\Util\String\LabelAwareInterface', $subject,
-            'Test subject does not extend expected interface.'
+            'Test subject does not extend expected parent interface.'
         );
 
         $this->assertInstanceOf(
             'Dhii\Util\String\DescriptionAwareInterface', $subject,
-            'Test subject does not extend expected interface.'
+            'Test subject does not extend expected parent interface.'
         );
     }
 }

@@ -15,9 +15,8 @@
         "php": "^5.3 | ^7.0",
         "dhii/data-key-value-aware-interface": "^0.1",
         "dhii/human-readable-interface": "dev-task/initial-interfaces",
-        "dhii/data-hierarchy-interface": "dev-develop",
         "dhii/type-interface": "dev-task/initial-interfaces",
-        "dhii/block-interface": "dev-task/initial-interface"
+        "dhii/output-renderer-interface": "dev-release/0.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^4.8",
