@@ -10,7 +10,7 @@ use Dhii\Util\String\LabelAwareInterface;
 /**
  * Something that represents a setting.
  *
- * A setting is key and value pair that is registered in the system that can be used as memory storage for value(s) in
+ * A setting provides information about some configuration data through
  * database and for validation.
  *
  * @since [*next-version*]
