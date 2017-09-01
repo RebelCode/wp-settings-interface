@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc0c66f077e56df6cfc46a22b5037e21",
+    "content-hash": "0ec0162931f51f54adfbca163a92f9fb",
     "packages": [
         {
             "name": "dhii/data-key-value-aware-interface",
@@ -50,16 +50,16 @@
         },
         {
             "name": "dhii/human-readable-interface",
-            "version": "dev-task/initial-interfaces",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dhii/human-readable-interface.git",
-                "reference": "35e5a00fa170edd4fb5d0e44e4757da825e1da2d"
+                "reference": "6c226dd9b7110717b56b1a7cf70d3f438fadcac2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dhii/human-readable-interface/zipball/35e5a00fa170edd4fb5d0e44e4757da825e1da2d",
-                "reference": "35e5a00fa170edd4fb5d0e44e4757da825e1da2d",
+                "url": "https://api.github.com/repos/Dhii/human-readable-interface/zipball/6c226dd9b7110717b56b1a7cf70d3f438fadcac2",
+                "reference": "6c226dd9b7110717b56b1a7cf70d3f438fadcac2",
                 "shasum": ""
             },
             "require": {
@@ -100,10 +100,10 @@
             ],
             "description": "Interfaces for human readable string interoperation.",
             "support": {
-                "source": "https://github.com/Dhii/human-readable-interface/tree/task/initial-interfaces",
+                "source": "https://github.com/Dhii/human-readable-interface/tree/develop",
                 "issues": "https://github.com/Dhii/human-readable-interface/issues"
             },
-            "time": "2017-08-11 09:19:38"
+            "time": "2017-08-12 06:33:15"
         },
         {
             "name": "dhii/output-renderer-interface",
