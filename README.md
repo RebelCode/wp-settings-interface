@@ -61,7 +61,16 @@ However, it is recommended to employ a standard for this string that allows your
 For instance, a setting may have a value of type `integer` while having a setting type of `"post_id"`,
 which can be used to check by your plugin to check in specialized validation and processing.
 
+### [`SettingAwareInterface`]
+
+A [`SettingAwareInterface`] represents any object that can provide a setting.  
+It exposes a `getSetting()` method that returns a [`SettingInterface`] instance.
+
+This interface is useful for defining a standard for objects that are capable of providing a setting,
+as well as objects that depend on a setting provider.
+
 [`SettingInterface`]: src/SettingInterface.php
+[`SettingAwareInterface`]: src/SettingAwareInterface.php
 [`rebelcode/wp-settings`]: https://github.com/RebelCode/wp-settings
 [`dhii/type-interface`]: https://github.com/Dhii/type-interface
 [`KeyAwareTypeInterface`]: https://github.com/Dhii/type-interface/blob/task/initial-interfaces/src/KeyAwareTypeInterface.php
