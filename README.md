@@ -64,14 +64,25 @@ which can be used to check by your plugin to check in specialized validation and
 
 Since the setting type is expected to be a string, if you wish to have the setting type be a [`TypeInterface`] instance
 to benefit from validation, then the type instance must also be able to be casted into a string.
-This can be achieved by implementing [`StringableInterface`], which together with [`KeyAwareTypeInterface`] allows something like the following:
+This can be achieved by implementing [`StringableInterface`], which together with [`KeyAwareTypeInterface`] allows you
+to implement something similar to the following:
 
 ```php
 class MySettingType implements KeyAwareInterface, StringableInterface
 {
+    public function __construct($key, ValidatorInterface $validator)
+    {
+        // do construction
+    }
+    
     public function getKey()
     {
         // return your key
+    }
+    
+    public function validate()
+    {
+        // do validation
     }
     
     public function __toString()
@@ -80,6 +91,8 @@ class MySettingType implements KeyAwareInterface, StringableInterface
     }
 }
 ```
+
+This is made possible since [`SettingInterface::getSettingType`] is allowed to return a stringable instance.
 
 ### [`SettingAwareInterface`]
 
@@ -90,6 +103,7 @@ This interface is useful for defining a standard for objects that are capable of
 as well as objects that depend on a setting provider.
 
 [`SettingInterface`]: src/SettingInterface.php
+[`SettingInterface::getSettingType`]: src/SettingInterface.php#L44
 [`SettingAwareInterface`]: src/SettingAwareInterface.php
 [`rebelcode/wp-settings`]: https://github.com/RebelCode/wp-settings
 [`dhii/type-interface`]: https://github.com/Dhii/type-interface
