@@ -3,7 +3,7 @@
 namespace RebelCode\WordPress\Admin\Settings;
 
 use Dhii\Data\KeyAwareInterface;
-use Dhii\Type\KeyAwareTypeInterface;
+use Dhii\Type\TypeInterface;
 use Dhii\Util\String\DescriptionAwareInterface;
 use Dhii\Util\String\LabelAwareInterface;
 
@@ -28,7 +28,7 @@ interface SettingInterface extends
      *
      * @since [*next-version*]
      *
-     * @return KeyAwareTypeInterface The value type.
+     * @return TypeInterface The value type.
      */
     public function getValueType();
 
