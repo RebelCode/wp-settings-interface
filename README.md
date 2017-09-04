@@ -19,24 +19,26 @@ composer require rebelcode/wp-settings-interface
 
 ## Implementation Guide
 
+### [`SettingInterface`]
+
 A [`SettingInterface`] represents a configurable piece of data in your plugin.
 It is responsible for providing the following information:
 
-### Key
+#### Key
 
 The setting key is a string that should be used to reference the setting and possibly also uniquely identify it and allow mapping the key to a setting instance.
 
-### Label
+#### Label
 
 The setting label is a string that provides a brief name for the setting.
 Hence, it should be a human readable and translatable string.
 
-### Description
+#### Description
 
 The setting description is a string that provides a detailed explanation of the setting's purpose in your plugin.
 Hence it should be a human readable and translatable string.
 
-### Value Type
+#### Value Type
 
 The value type dictates what type of _data_ is valid data for the setting.
 This should be an instance of [`KeyAwareTypeInterface`].
@@ -46,7 +48,7 @@ Since the type is key-aware, application logic can use the type's key for other 
 
 See the [`dhii/type-interface`] package for more information.
 
-### Setting Type
+#### Setting Type
 
 The setting type is a key-like string that indicates the nature of the setting.
 
