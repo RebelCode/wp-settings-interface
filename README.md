@@ -108,5 +108,5 @@ as well as objects that depend on a setting provider.
 [`rebelcode/wp-settings`]: https://github.com/RebelCode/wp-settings
 [`dhii/type-interface`]: https://github.com/Dhii/type-interface
 [`StringableInterface`]: https://github.com/Dhii/stringable-interface/blob/master/src/StringableInterface.php
-[`TypeInterface`]: https://github.com/Dhii/type-interface/blob/task/initial-interfaces/src/KeyAwareTypeInterface.php
+[`TypeInterface`]: https://github.com/Dhii/type-interface/blob/task/initial-interfaces/src/TypeInterface.php
 [`KeyAwareTypeInterface`]: https://github.com/Dhii/type-interface/blob/task/initial-interfaces/src/KeyAwareTypeInterface.php
