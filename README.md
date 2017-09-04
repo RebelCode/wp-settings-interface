@@ -56,7 +56,8 @@ the setting type describes the whole setting.
 Its purpose is to provide meaning and significance to the setting. As such, how it is used is completely up to consumer code.
 However, it is recommended to employ a standard for this string that allows your code to behave in accordance to the setting's type.
 
-For instance, a setting may have a value of type `integer` while having a setting type of `"post_id"`, which can be used to check.
+For instance, a setting may have a value of type `integer` while having a setting type of `"post_id"`,
+which can be used to check by your plugin to check in specialized validation and processing.
 
 [`SettingInterface`]: src/SettingInterface.php
 [`rebelcode/wp-settings`]: https://github.com/RebelCode/wp-settings
