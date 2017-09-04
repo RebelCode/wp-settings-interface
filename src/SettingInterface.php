@@ -6,6 +6,7 @@ use Dhii\Data\KeyAwareInterface;
 use Dhii\Type\TypeInterface;
 use Dhii\Util\String\DescriptionAwareInterface;
 use Dhii\Util\String\LabelAwareInterface;
+use Dhii\Util\String\StringableInterface;
 
 /**
  * Something that represents a setting.
@@ -40,7 +41,7 @@ interface SettingInterface extends
      *
      * @since [*next-version*]
      *
-     * @return string The setting type.
+     * @return string|StringableInterface The setting type.
      */
     public function getSettingType();
 }
